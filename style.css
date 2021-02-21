@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 63.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Long Cang", cursive;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0 3rem 0 3rem; }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center; }
+  .header__nav-name {
+    font-size: 4rem;
+    margin-right: 5rem;
+    background-color: #000;
+    background-image: linear-gradient(147deg, rgba(44, 62, 80, 0.8) 35%, black 74%);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .header__nav-logo {
+    height: 5rem; }
+
+.section__about {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(147deg, rgba(44, 62, 80, 0.6) 0%, rgba(0, 0, 0, 0.6) 74%), url(../img/about-cover.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 85vh;
+  transition: all 1s; }
+  .section__about-content {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 8.5rem; }
+  .section__about-cover {
+    background-image: linear-gradient(147deg, rgba(44, 62, 80, 0.6) 0%, rgba(0, 0, 0, 0.6) 74%);
+    z-index: 1; }
+    .section__about-cover-image {
+      width: 100vw;
+      filter: blur(4px) brightness(0.5);
+      z-index: -1; }
+  .section__about-data {
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    width: 50%;
+    line-height: 1.2;
+    align-items: center;
+    margin-top: 15rem;
+    color: #fefefe;
+    font-size: #656565;
+    margin-left: 5rem;
+    animation: tobottom 0.5s; }
+    .section__about-data-span {
+      text-align: center;
+      width: 15rem;
+      transform-origin: left;
+      background-image: linear-gradient(to top, #1f2d3a 35%, white 61%);
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 1s; }
+    .section__about-data-mail {
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+      background-color: #2c3e50;
+      padding: 0.5rem 2rem 1rem 2rem;
+      border-radius: 100px;
+      animation: fadein 1s 2s;
+      animation-fill-mode: backwards;
+      transition: all 0.5s; }
+      .section__about-data-mail:hover {
+        transform: scale(1.1);
+        color: #2c3e50;
+        background-color: #fff; }
+    .section__about-data-popup {
+      margin-top: 1rem;
+      color: #9682aa;
+      font-size: 3rem;
+      animation: fadein 1s;
+      transform: translateX(-12rem); }
+    .section__about-data-img {
+      height: 5rem; }
+  .section__about-nav {
+    width: 50%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section__about-nav-list {
+      list-style: none;
+      margin: 1rem;
+      font-size: 5rem; }
+    .section__about-nav-link {
+      transition: all 0.5s; }
+      .section__about-nav-link:hover {
+        transform: translateY(-0.5rem) scale(1.2); }
+      .section__about-nav-link-1 {
+        animation: toleft 1s 0.5s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+      .section__about-nav-link-2 {
+        animation: toleft 1s 1s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+      .section__about-nav-link-3 {
+        animation: toleft 1s 1.5s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+      .section__about-nav-link-4 {
+        animation: toleft 1s 2s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+      .section__about-nav-link-5 {
+        animation: toleft 1s 2.5s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+      .section__about-nav-link-6 {
+        animation: toleft 1s 3s cubic-bezier(0.04, 0.84, 0.87, 0.84);
+        animation-fill-mode: backwards; }
+  .section__about .nav-link,
+  .section__about .nav-link:active {
+    text-decoration: none;
+    color: #b4b4b4; }
+
+.nav-link:hover {
+  color: #3c3e85; }
+
+.education-heading {
+  background-image: linear-gradient(147deg, #2e4979 0%, #0d1620 74%);
+  clip-path: polygon(0 88%, 100% 0%, 100% 100%, 0 100%);
+  height: 10rem;
+  font-size: 5rem;
+  font-weight: 500;
+  color: #6c94b2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -8rem; }
+  .education-heading-text {
+    margin-right: 7rem;
+    margin-top: 2rem; }
+
+.slider {
+  font-size: 3rem;
+  margin-top: 2rem;
+  height: 70rem;
+  overflow: hidden;
+  position: relative; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70rem;
+  transition: all 1s;
+  background-color: #e6e6e6;
+  overflow: hidden; }
+  .slide-container {
+    width: 100%; }
+    .slide-container-shade {
+      position: absolute;
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      left: 0px;
+      top: 0px;
+      background-color: rgba(0, 0, 38, 0.4); }
+    .slide-container-img {
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, rgba(14, 9, 33, 0.6), rgba(0, 0, 0, 0.1)), url(img/CLG.jpg);
+      background-size: cover;
+      mix-blend-mode: darken;
+      filter: blur(1px); }
+      .slide-container-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px); }
+    .slide-container-text {
+      position: absolute;
+      width: 31rem;
+      font-size: 3rem;
+      transform: rotate(-90deg);
+      top: 47rem;
+      left: 26rem; }
+    .slide-container-nit {
+      text-align: end;
+      width: 70rem;
+      font-family: "Akaya Kanadaka", cursive;
+      font-size: 10rem;
+      position: absolute;
+      right: 55rem;
+      border-bottom: 3px solid #000;
+      letter-spacing: 1rem; }
+      .slide-container-nit::after {
+        content: "";
+        position: absolute;
+        top: 8rem;
+        left: 76rem;
+        height: 0.3rem;
+        width: 49rem;
+        background-color: #000; }
+    .slide-container-kuk {
+      font-family: "Akaya Kanadaka", cursive;
+      font-size: 4rem;
+      position: absolute;
+      right: 17rem;
+      top: 13rem;
+      letter-spacing: 3px; }
+    .slide-container-heading {
+      font-family: "Akaya Kanadaka", cursive;
+      font-size: 8rem;
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 39rem; }
+      .slide-container-heading::after {
+        content: "";
+        background-color: black;
+        height: 0.2rem;
+        width: 14rem;
+        position: absolute;
+        top: 7rem;
+        left: 50rem; }
+    .slide-container-info {
+      position: absolute;
+      display: flex;
+      font-size: 2rem;
+      transform: rotate(-90deg);
+      top: 54rem;
+      left: -4rem; }
+      .slide-container-info-data {
+        font-family: "Roboto", sans-serif;
+        margin-right: 2rem;
+        border-right: 2.5px solid black;
+        padding-right: 1rem; }
+        .slide-container-info-data:last-child {
+          border-right: none; }
+    .slide-container-whiteline {
+      position: absolute;
+      height: 0.5rem;
+      width: 77rem;
+      background-color: #e6e6e6;
+      top: 37rem;
+      left: 97rem; }
+      .slide-container-whiteline::after {
+        content: "";
+        position: absolute;
+        left: -17rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 2000rem;
+        background-color: #e6e6e6; }
+    .slide-container-whiteline-1 {
+      position: absolute;
+      height: 0.5rem;
+      width: 22rem;
+      background-color: #e6e6e6;
+      top: 59rem;
+      left: 70rem;
+      transform: rotate(-90deg); }
+    .slide-container-link {
+      position: absolute;
+      text-decoration: none;
+      color: #000;
+      font-size: 3rem;
+      font-weight: 400;
+      left: 7rem;
+      top: 17rem;
+      transform: rotate(-90deg); }
+  .slide-container-1-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/books.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(7px); }
+  .slide-container-1-anime {
+    position: absolute;
+    top: 18rem;
+    right: 38rem;
+    width: 102rem;
+    height: 31rem; }
+  .slide-container-1-info {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 5rem;
+    left: 5rem; }
+    .slide-container-1-info-data {
+      border-right: 3px solid black;
+      padding: 0 2rem 0 2rem; }
+      .slide-container-1-info-data:last-child {
+        border-right: none;
+        padding-left: 2rem; }
+  .slide-container-1-text {
+    position: absolute;
+    width: 31rem;
+    font-size: 3rem;
+    top: 56rem;
+    left: 136rem; }
+  .slide-container-1-link {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    text-decoration: none;
+    font-size: 3rem;
+    color: black; }
+  .slide-container-1-card {
+    position: absolute;
+    width: 45rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 10rem; }
+    .slide-container-1-card .f1,
+    .slide-container-1-card .b1 {
+      transform-origin: right; }
+    .slide-container-1-card .f2,
+    .slide-container-1-card .b2 {
+      transform-origin: left; }
+    .slide-container-1-card-1 {
+      position: absolute;
+      top: 5rem;
+      left: 8rem;
+      transform-origin: right; }
+    .slide-container-1-card-2 {
+      position: absolute;
+      top: 14rem;
+      right: 5rem; }
+    .slide-container-1-card-side {
+      height: 10rem;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.2); }
+      .slide-container-1-card-side-back {
+        transform: rotateY(180deg); }
+  .slide-container-1-heading1 {
+    font-family: "Akaya Kanadaka", cursive;
+    font-size: 7rem;
+    padding: 0 2rem 0 6rem;
+    border-right: 4px solid lightblue;
+    background-color: black;
+    color: lightblue;
+    border-top-left-radius: 60px; }
+  .slide-container-1-heading2 {
+    border-bottom-right-radius: 60px;
+    font-family: "Akaya Kanadaka", cursive;
+    font-size: 7rem;
+    padding: 0 2rem 0 2rem;
+    border-left: 4px solid black;
+    background-color: lightblue; }
+  .slide-container-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/pencil.jpg);
+    background-size: cover; }
+    .slide-container-2-info {
+      position: absolute;
+      top: 45rem;
+      left: 15rem;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 2rem;
+      font-family: "Akaya Kanadaka", cursive;
+      color: #020014; }
+      .slide-container-2-info-ele-1::before {
+        content: "";
+        position: absolute;
+        top: 2.6rem;
+        left: -15rem;
+        width: 25rem;
+        height: 4px;
+        background-color: #050f39;
+        animation: inandout 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74); }
+      .slide-container-2-info-ele-2::before {
+        content: "";
+        position: absolute;
+        top: 5.7rem;
+        left: -15rem;
+        width: 25rem;
+        height: 4px;
+        background-color: #050f39;
+        animation: inandout 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74); }
+      .slide-container-2-info-ele-3::before {
+        content: "";
+        position: absolute;
+        top: 9rem;
+        left: -15rem;
+        width: 25rem;
+        height: 4px;
+        background-color: #050f39;
+        animation: inandout 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74); }
+    .slide-container-2-dsg1 {
+      font-family: "Akaya Kanadaka", cursive;
+      position: absolute;
+      left: -5rem;
+      top: 11rem;
+      height: 11rem;
+      width: 74rem;
+      font-size: 7rem;
+      background-color: #050f39;
+      border-radius: 1000px;
+      text-align: end;
+      padding-right: 2rem;
+      animation: inandout 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74);
+      transition: all 1s;
+      color: transparent;
+      clip-path: url(#clip); }
+    .slide-container-2-dsg2 {
+      font-family: "Akaya Kanadaka", cursive;
+      position: absolute;
+      right: -5rem;
+      top: 48rem;
+      height: 11rem;
+      width: 74rem;
+      font-size: 7rem;
+      background-color: #050f39;
+      border-radius: 1000px;
+      text-align: start;
+      padding-left: 2rem;
+      animation: outandin 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74);
+      transition: all 1s;
+      color: #e6e6e6; }
+    .slide-container-2-dsg3 {
+      position: absolute;
+      left: 84rem;
+      top: 0;
+      height: 61rem;
+      width: 2rem;
+      background-color: #050f39;
+      animation: inandout 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74); }
+    .slide-container-2-dsg4 {
+      position: absolute;
+      left: 75rem;
+      top: 9rem;
+      height: 61rem;
+      width: 2rem;
+      background-color: #050f39;
+      animation: outandin 2s infinite cubic-bezier(0.33, 0.34, 0.77, 0.74); }
+    .slide-container-2-blur {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(3px);
+      width: 100%;
+      height: 100%; }
+  .slide-btn {
+    position: absolute;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 4rem;
+    border-radius: 50%;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 1s; }
+    .slide-btn-left {
+      left: 2%;
+      animation: btnanime 2s infinite; }
+    .slide-btn-right {
+      right: 2%;
+      animation: btnanime 2s infinite; }
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%, -50%); }
+  .dots .btn-each {
+    margin-right: 2rem;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #152238; }
+
+.btn__each-active {
+  background-color: #299687 !important; }
+
+.section-programming {
+  height: 10rem;
+  background-color: black; }
+
+@keyframes inandout {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-8rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes outandin {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(8rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes toleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100rem); }
+  80% {
+    opacity: 1;
+    transform: translateX(-2rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes tobottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes btnanime {
+  0% {
+    background-color: #b7d8ff; }
+  50% {
+    background-color: #004ca6; }
+  100% {
+    background-color: #00060d;
+    transform: scale(1.2); } }
+
+@keyframes dropword {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.hidden {
+  display: none; }
+
+.animeclassfront {
+  transform: rotateY(-180deg); }
+
+.animeclassback {
+  transform: rotateY(0); }
